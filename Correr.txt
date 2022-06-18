@@ -1,0 +1,7 @@
+python Gen_Peer.py -p 3000 -i 192.168.1.68 -r Peer1 -t 2222
+
+python Peer.py -i Peer1/peer_info93bb42609ed1bdf800ee5ad4bb42f274.json
+
+python Torrent.py -p 2222 -i 192.168.1.68 -f Peer1/jojo.webp
+
+python Tracker_handler.py -p 2222
